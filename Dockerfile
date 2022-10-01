@@ -1,17 +1,13 @@
 FROM node:lts AS node
 
-ARG ENV=prod
-ARG APP=angular-docker
-
-ENV ENV ${ENV}
-ENV APP ${APP}
+ENV ENV prod
 
 WORKDIR /app
 COPY ./ /app/
 
 RUN npm ci
 RUN npm run build --prod
-RUN mv /app/dist/${APP}/* /app/dist/
+RUN mv /app/dist/twinkle/* /app/dist/
 
 FROM nginx:1.23-alpine
 
