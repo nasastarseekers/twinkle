@@ -1,19 +1,15 @@
-import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'twinkle-first-step',
   templateUrl: './first-step.component.html',
   styleUrls: ['./first-step.component.scss']
 })
-export class FirstStepComponent {
+export class FirstStepComponent implements OnInit {
 
-  firstFormGroup = this._formBuilder.group({
-    firstCtrl: ['', Validators.required],
-  });
-  secondFormGroup = this._formBuilder.group({
-    secondCtrl: ['', Validators.required],
-  });
+  constructor() { }
 
-  constructor(private _formBuilder: FormBuilder) {}
+  ngOnInit(): void {
+  }
+
 }
