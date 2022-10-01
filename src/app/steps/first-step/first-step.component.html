@@ -5,9 +5,23 @@
       <twinkle-step-title second></twinkle-step-title>
       <twinkle-dark-mode-toggle third></twinkle-dark-mode-toggle>
     </twinkle-header>
-    <div class="first-step__view__star scale">
-      <img src="/assets/images/star.svg" class="rotate" />
+    <div class="first-step__view__game">
+      <div class="first-step__star scale">
+        <div class="circle"></div>
+        <img src="/assets/images/star.svg" class="rotate" />
+      </div>
+      <twinkle-sidebar>
+        <h2>Apparent magnitude</h2>
+        <p>
+          Apparent magnitude (m) is a measure of the brightness of a star or
+          other astronomical object observed from Earth. An object's apparent
+          magnitude depends on its intrinsic luminosity, its distance from
+          Earth, and any extinction of the object's light caused by interstellar
+          dust along the line of sight to the observer.
+        </p>
+      </twinkle-sidebar>
     </div>
+
     <!-- <mat-horizontal-stepper headerPosition="bottom" #stepper>
       <mat-step [stepControl]="firstFormGroup" label="Step 1">
         <form [formGroup]="firstFormGroup">

@@ -5,13 +5,12 @@ import { StepsComponent } from './steps.component';
 import { ComponentsModule } from '../components/components.module';
 import { FirstStepComponent } from './first-step/first-step.component';
 
-
 @NgModule({
   declarations: [StepsComponent, FirstStepComponent],
   imports: [
     CommonModule,
     StepsRoutingModule,
-    ComponentsModule
+    ComponentsModule,
   ]
 })
 export class StepsModule { }

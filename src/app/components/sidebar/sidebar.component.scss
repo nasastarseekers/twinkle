@@ -1,0 +1,17 @@
+.sidebar {
+  width: 36vw;
+  height: 100vh;
+  background-color: rgb(60, 35, 80);
+  padding: 2vw;
+  color: #fff;
+
+  &__content {
+    margin-top: 2rem;
+  }
+
+  ::ng-deep {
+    .ngx-slider-inner-tooltip {
+      color: #fff;
+    }
+  }
+}

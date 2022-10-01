@@ -1,19 +1,44 @@
 .first-step {
   &__view {
-    background-image: url("/assets/images/star-background.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-self: center;
 
-    &__star {
-      height: 50vh;
+    &__game {
+      display: flex;
       align-self: center;
-      margin: 0 auto;
+      height: 100vh;
     }
   }
+
+  &__star {
+    background-image: url("/assets/images/star-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+    width: 60vw;
+    align-self: center;
+    margin: 0 auto;
+
+    img {
+      margin: 0 auto;
+      display: flex;
+    }
+  }
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 #fff;
+  margin: 0 auto;
+  display: flex;
+  position: absolute;
+  left: 23vw;
+  top: 2vh;
+  opacity: 1;
 }
 
 @keyframes rotate {
