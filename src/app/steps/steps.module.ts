@@ -4,9 +4,10 @@ import { StepsRoutingModule } from './steps-routing.module';
 import { StepsComponent } from './steps.component';
 import { ComponentsModule } from '../components/components.module';
 import { FirstStepComponent } from './first-step/first-step.component';
+import { SecondStepComponent } from './second-step/second-step.component';
 
 @NgModule({
-  declarations: [StepsComponent, FirstStepComponent],
+  declarations: [StepsComponent, FirstStepComponent, SecondStepComponent],
   imports: [
     CommonModule,
     StepsRoutingModule,

@@ -5,6 +5,12 @@
   padding: 2vw;
   color: #fff;
 
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   &__content {
     margin-top: 2rem;
   }

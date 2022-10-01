@@ -1,5 +1,9 @@
 <div class="sidebar">
-  <ngx-slider [(value)]="originalValue" [options]="options"></ngx-slider>
+  <ngx-slider
+    [(value)]="originalValue"
+    [options]="options"
+    (valueChange)="changeValue($event)"
+  ></ngx-slider>
   <div class="sidebar__content">
     <ng-content></ng-content>
   </div>

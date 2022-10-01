@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
 import { Options } from '@angular-slider/ngx-slider';
 
 @Component({
@@ -19,4 +19,7 @@ export class SidebarComponent {
     showTicksValues: true
   };
 
+  public changeValue(changeContext: number): void {
+    this.newValue.emit(changeContext);
+  }
 }
