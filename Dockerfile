@@ -1,4 +1,4 @@
-FROM node:lts as node
+FROM node:lts AS node
 
 ARG ENV=prod
 ARG APP=angular-docker
