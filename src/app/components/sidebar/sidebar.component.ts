@@ -7,6 +7,9 @@ import { Options } from '@angular-slider/ngx-slider';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
+  @Input()
+  public unitOfMeasure!: string;
+
   @Output()
   public newValue = new EventEmitter<number>();
 

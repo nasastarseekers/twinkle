@@ -1,11 +1,11 @@
 .second-step {
   &__view {
     display: flex;
-    flex-direction: column;
     align-self: center;
 
     &__game {
       display: flex;
+      flex-direction: column;
       align-self: center;
       height: 100vh;
     }
@@ -15,12 +15,11 @@
     background-image: url("/assets/images/star-background.png");
     background-repeat: no-repeat;
     background-position: center;
-    height: 50vh;
     width: 60vw;
     align-self: center;
-    margin: 0 auto;
+    margin: 4rem auto 0 auto;
 
-    img {
+    svg {
       margin: 0 auto;
       display: flex;
     }

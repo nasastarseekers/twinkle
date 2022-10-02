@@ -11,8 +11,17 @@
     justify-content: space-between;
   }
 
+  &__unit {
+    text-align: right;
+    font-weight: 700;
+    padding-bottom: 2rem;
+  }
+
   &__content {
     margin-top: 2rem;
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 
   ::ng-deep {

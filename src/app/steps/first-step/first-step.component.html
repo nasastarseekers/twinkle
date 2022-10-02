@@ -1,33 +1,28 @@
 <div class="first-step">
   <div class="first-step__view">
-    <twinkle-header>
-      <a routerLink="/steps">Go home</a>
-      <twinkle-step-title second>
-        <p>Step 1. Choose your brightness</p>
-      </twinkle-step-title>
-      <twinkle-dark-mode-toggle third></twinkle-dark-mode-toggle>
-    </twinkle-header>
     <div class="first-step__view__game">
+      <twinkle-header>
+        <a routerLink="/steps">&#10094; Go home</a>
+        <twinkle-step-title second>
+          <p>Step 1. Choose your brightness</p>
+        </twinkle-step-title>
+        <twinkle-dark-mode-toggle third></twinkle-dark-mode-toggle>
+      </twinkle-header>
       <div class="first-step__star scale">
         <div class="circle" id="circle"></div>
         <img src="/assets/images/star.svg" class="rotate" />
       </div>
-      <twinkle-sidebar
-        (newValue)="setNewValue($event)"
-        [nextStepPath]="'/steps/second-step'"
-      >
-        <h2>Apparent magnitude</h2>
-        <p>
-          Apparent magnitude (m) is a measure of the brightness of a star or
-          other astronomical object observed from Earth. An object's apparent
-          magnitude depends on its intrinsic luminosity, its distance from
-          Earth, and any extinction of the object's light caused by interstellar
-          dust along the line of sight to the observer.
-        </p>
+    </div>
+    <twinkle-sidebar [unitOfMeasure]="'ADU/sec'" (newValue)="setNewValue($event)">
+      <h2>Flux Brightness and magnitude</h2>
+      <p>
+        The flux of an object is in units of energy/time/area and for a detected object, it is defined as its brightness divided by the area used to collect the light from the source or the telescope aperture (for example in cm2).
+      </p>
+      <div class="steps-links">
         <a routerLink="/steps/second-step">
           <twinkle-button-link> Next step </twinkle-button-link>
         </a>
-      </twinkle-sidebar>
-    </div>
+      </div>
+    </twinkle-sidebar>
   </div>
 </div>
